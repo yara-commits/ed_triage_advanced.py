@@ -23,7 +23,7 @@ welcome_text = "Welcome to our ED triage system. Please be calm. Everything will
 audio_path = "welcome.mp3"
 if not os.path.exists(audio_path):
     from gtts import gTTS
-    tts = gTTS("Welcome to our ED triage system. Please be calm. Everything will be fine.", lang="en")
+    tts = gTTS("Welcome to our ED triage system. Please be calm. Everything will be fine Our system is here to help assess your symptoms quickly and safe", lang="en")
     tts.save(audio_path)
 
 # ---------- CONVERT AUDIO TO BASE64 ----------
